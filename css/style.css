@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
 
 :root {
   --color-text: #0c0805;
@@ -6,6 +6,7 @@
   --color-bg-alt: #f2f2f2;
   --color-black: #000000;
   --color-white: #ffffff;
+  --color-primary: #2d6bea;
   --border-light-15: rgba(12, 8, 5, 0.15);
   --border-white-20: rgba(255, 255, 255, 0.2);
 
@@ -24,7 +25,7 @@ html {
 }
 
 body {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   color: var(--color-text);
   background: var(--color-bg);
   line-height: 1.5;
@@ -48,7 +49,7 @@ a {
   padding: 10px 24px;
   border-radius: 6px;
   border: 1px solid transparent;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -69,6 +70,12 @@ a {
   background: var(--color-white);
   border-color: var(--color-white);
   color: var(--color-text);
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .btn--outline {
@@ -116,8 +123,8 @@ a {
 }
 
 .navbar__logo img {
-  width: 70px;
-  height: 36px;
+  width: 121px;
+  height: 16px;
 }
 
 .navbar__links {
@@ -142,11 +149,11 @@ a {
 /* Hero */
 .hero {
   position: relative;
-  height: 900px;
+  height: 683px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding: 0 var(--page-padding);
+  padding: 80px var(--page-padding) 0;
   overflow: hidden;
 }
 
@@ -158,39 +165,44 @@ a {
   object-fit: cover;
 }
 
-.hero__overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-}
-
 .hero__content {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 22px;
   max-width: 768px;
   width: 100%;
   color: var(--color-white);
   text-align: center;
 }
 
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+}
+
 .hero__title {
-  font-size: 72px;
-  font-weight: 500;
+  font-size: 54px;
+  font-weight: 600;
   line-height: 1.2;
-  letter-spacing: -0.72px;
+  letter-spacing: -0.54px;
 }
 
 .hero__subtitle {
   font-size: 18px;
   font-weight: 400;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .hero__actions {
   display: flex;
   gap: 16px;
+  align-items: flex-start;
 }
 
 /* FSD section */
@@ -400,16 +412,21 @@ a {
   }
 
   .hero {
-    height: 812px;
+    height: 700px;
+    padding-top: 48px;
   }
 
   .hero__content {
-    gap: 24px;
+    gap: 20px;
+  }
+
+  .hero__text {
+    gap: 12px;
   }
 
   .hero__title {
-    font-size: 44px;
-    letter-spacing: -0.44px;
+    font-size: 40px;
+    letter-spacing: -0.4px;
   }
 
   .hero__subtitle {
