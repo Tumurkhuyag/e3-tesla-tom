@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap");
 
 :root {
   --color-text: #0c0805;
@@ -6,7 +6,6 @@
   --color-bg-alt: #f2f2f2;
   --color-black: #000000;
   --color-white: #ffffff;
-  --color-primary: #2d6bea;
   --border-light-15: rgba(12, 8, 5, 0.15);
   --border-white-20: rgba(255, 255, 255, 0.2);
 
@@ -64,18 +63,14 @@ a {
   border-color: var(--color-black);
   color: var(--color-white);
   padding: 8px 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
 }
 
 .btn--light {
   background: var(--color-white);
   border-color: var(--color-white);
   color: var(--color-text);
-}
-
-.btn--primary {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
-  color: var(--color-white);
 }
 
 .btn--outline {
@@ -106,7 +101,7 @@ a {
 .navbar {
   background: var(--color-bg);
   padding: 0 var(--page-padding);
-  height: 72px;
+  height: 56px;
   display: flex;
   align-items: center;
 }
@@ -134,7 +129,9 @@ a {
 }
 
 .navbar__links a {
-  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
   text-decoration: none;
   color: var(--color-text);
   white-space: nowrap;
@@ -153,7 +150,7 @@ a {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: 80px var(--page-padding) 0;
+  padding: 48px var(--page-padding) 0;
   overflow: hidden;
 }
 
@@ -170,7 +167,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 22px;
+  gap: 28px;
   max-width: 768px;
   width: 100%;
   color: var(--color-white);
@@ -181,28 +178,36 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  gap: 8px;
   width: 100%;
+  line-height: 1.2;
 }
 
 .hero__title {
-  font-size: 54px;
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -0.54px;
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
 }
 
 .hero__subtitle {
-  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
   font-weight: 400;
   text-decoration: underline;
-  text-underline-offset: 3px;
 }
 
 .hero__actions {
   display: flex;
   gap: 16px;
   align-items: flex-start;
+}
+
+.hero__actions .btn {
+  font-size: 14px;
+}
+
+.hero__actions .btn--light {
+  font-family: "Roboto", sans-serif;
 }
 
 /* FSD section */
@@ -426,7 +431,6 @@ a {
 
   .hero__title {
     font-size: 40px;
-    letter-spacing: -0.4px;
   }
 
   .hero__subtitle {
