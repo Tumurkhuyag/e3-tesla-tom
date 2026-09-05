@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 
+import ContactForm from "@/components/sections/ContactForm";
 import { LocationIcon, MailIcon, PhoneIcon } from "@/components/ui/icons";
 
 type ContactItem = {
@@ -62,6 +63,8 @@ export default function Contact() {
             </div>
           ))}
         </div>
+
+        <ContactForm />
       </div>
     </section>
   );

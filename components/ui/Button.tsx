@@ -9,6 +9,8 @@ import { cn } from "@/lib/utils";
  */
 const variants = {
   dark: "border-black bg-black px-5 py-1 font-ui text-xs text-white md:py-2 md:text-sm",
+  /** Формын үндсэн үйлдэл — dark-тай ижил өнгө, харин том талбайтай */
+  solid: "border-black bg-black px-6 py-2.5 text-xs text-white md:text-base",
   light: "border-white bg-white px-6 py-2.5 font-ui text-xs text-ink md:text-sm",
   outline: "border-white/20 px-6 py-2.5 text-xs text-white md:text-sm",
   outlineDark: "border-ink/15 px-6 py-2.5 text-xs text-ink md:text-base",
@@ -31,6 +33,8 @@ export default function Button({
     <button
       className={cn(
         "inline-flex cursor-pointer items-center justify-center gap-2 rounded-md border font-medium whitespace-nowrap",
+        "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current",
+        "disabled:cursor-not-allowed disabled:opacity-60",
         variants[variant],
         className,
       )}

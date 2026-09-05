@@ -4,6 +4,7 @@
   /* Өнгө */
   --color-ink: #0c0805;
   --color-mist: #f2f2f2;
+  --color-danger: #b42318;
 
   /* Үсгийн фонт — утгууд нь next/font-оос ирнэ (app/layout.tsx) */
   --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
